@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --primary-pink:rgb(254,2,102);
+    --white:rgb(250,250,250);
+}
+/* Auth Page  */
+.AuthPage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AuthPage form{
+    width: 75%;
+    max-width: 350px;
+    max-height: 400px;
+    height: 75%;
+    background-color: var(--primary-pink);
+    border-radius: .5em;
+    display: flex;
+    color: var(--white);
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    align-items: center;
+}
+.AuthPage form .inputSec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    max-height: 50px;
+}
+
+.AuthPage form .inputSec input{
+    padding: 10px;
+    width: 90%; 
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.AuthPage form .btn-sec{ 
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.AuthPage form button{
+    padding: 10px 20px;
+    width: 40%;
+    border-radius: 5px;  
+    border: 1px solid white;
+    color: var(--primary-pink);
+    font-weight: 900;
+    cursor: pointer;
+    transition: all .3s;
+}
+.AuthPage form button:active{
+    transform: scale(.9);
+}
+.AuthPage form button:hover{
+    filter: brightness(.9);
+}
+.AuthPage form .link-btn{ 
+    text-align: end;  
+    background-color: var(--white); 
+}
+
+/* Auth Page Ending */
