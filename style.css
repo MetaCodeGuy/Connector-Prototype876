@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+body{
+    background-color: rgb(240, 240, 240);
+}
 /* :root{
     --primary-pink:rgb(255, 255, 255);
     --white:rgb(255, 255, 255);
@@ -13,6 +17,7 @@
 .AuthPage{
     width: 100%;
     height: 100vh;
+    max-height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +30,7 @@
     height: 75%; 
     border-radius: .5em;
     display: flex;
-   
+   background-color: #fff;
     flex-direction: column;
     justify-content: center;
     gap: 1.5em;
@@ -44,6 +49,7 @@
     padding: 10px;
     width: 90%; 
     border: none;
+    border-bottom: 1px solid;
     outline: none;
     border-radius: 2px;
 }
@@ -59,13 +65,13 @@
 .AuthPage form button{
     padding: 10px 20px;
     width: 40%;
-    border-radius: 5px;  
-    border: 1px solid white;
-    
+    border-radius: 5px;   
+    border: 1px solid white; 
     font-weight: 900;
     cursor: pointer;
     transition: all .3s;
 }
+ 
 .AuthPage form button:active{
     transform: scale(.9);
 }
@@ -74,6 +80,10 @@
 }
 .AuthPage form .link-btn{ 
     text-align: end;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8em;
     background-color: var(--white); 
 }
 
@@ -87,6 +97,8 @@
 .homepage{
     width: 100%; 
     display: flex;
+    max-width: 1300px;
+    margin: auto;
     align-items: start;
     padding: 3em 0;
     justify-content: space-evenly;
@@ -94,17 +106,17 @@
 }
 .header{
     width: 100%;
+    background-color: #fff;
     height: 80px;
     display: flex; 
-    justify-content: center;
-    background: var(--primary-pink);
+    justify-content: center; 
     align-items: center;
 }
-a.logo{
+.logo{
     font-weight: 900;
     text-decoration: none;
    color:black;
-    font-size: 1.5em; 
+    font-size: 1.9em; 
 }
 
 /* Header section ending */
@@ -113,9 +125,9 @@ a.logo{
 /* Connected peoples */
 
 .connectedPeople{ 
-    width: 30%;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.372);
+    width: 30%; 
     padding: 1em;
+    background-color: #fff;
     text-align: center;
     height: 90%; 
     max-width: 300px;  
@@ -128,21 +140,18 @@ a.logo{
     display: flex;
     align-items: center;
     gap: 1em;
-    cursor: pointer;
-    border: 1px solid white;
+    cursor: pointer; 
     padding: .6em;
     margin: auto;
     border-radius: .4em;
     height: 60px;
-    background-color: #fff;
+    background-color: #ebebeb;
     color: black;
 }
 .cptitle{
     margin-bottom: 1em;
 }
-.cpbox:hover{
-    border: 1px solid ;
-}
+ 
 .cpbox img{
     width: 40px;
     height: 40px;
@@ -173,11 +182,11 @@ a.logo{
 
 .post{
     width: 100%;
+    background-color: #fff;
     border-radius: 10px;
     min-height: 350px;
     margin-bottom: 5em; 
-    max-width:400px;
-    border: 1px solid ;  
+    max-width:400px; 
 }
 .post .post-head{
     width: 100%;
@@ -225,8 +234,10 @@ a.logo{
     width: 30%;
     height: 75%;
     border-radius: .5em;
-    display: flex;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.372);
+    background-color: #fff;
+    max-width: 400px;
+    display: flex; 
+    max-height: 500px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; 
@@ -252,6 +263,12 @@ overflow-y: scroll;
     align-items: center;
     flex-direction: column;
 }
+.seekedpeople::-webkit-scrollbar{
+    width: 5px;
+}
+.seekedpeople::-webkit-scrollbar-thumb{
+    background:rgb(202, 202, 202);
+}
 .seekbox{
     width: 90%;
     height: 75px;
@@ -260,8 +277,8 @@ overflow-y: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
-    border: 1px solid ;
+    gap: 1.3em; 
+    background-color: #ebebeb;
     padding: .7em;
 }
 .p-info{
@@ -279,8 +296,7 @@ overflow-y: scroll;
     color: white;
     cursor: pointer;
 }
-.seekbox button:hover{
-    border: 1px solid;
+.seekbox button:hover{ 
     background: white;
     color: black;
 }
@@ -290,6 +306,8 @@ overflow-y: scroll;
     height: 50px;
     border-radius: 50%;
 }
+
+
 /* end of seek people */
 
 @media screen and (max-width:1100px) {

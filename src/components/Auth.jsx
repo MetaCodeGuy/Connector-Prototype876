@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import google from  '../assets/google-logo.png'
+import meta from '../assets/meta-logo.png'
 import {createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
 import { auth } from '../../config/firebase'
@@ -27,11 +29,11 @@ nav('/')
         <div className="inputSec">
             <input type="password" onChange={(val)=>setPassword(val.target.value)} placeholder='Enter Your Password..' />
         </div>
-        <button>Sign In</button>
+        <button className='sign-btn'>Sign In</button>
         <span>Or SignIn With</span>
         <div className="btn-sec">
-            <button className='link-btn'>Google</button>
-            <button className='link-btn'>Meta</button>
+            <button className='link-btn'><img src={google} width='25' alt="" />Google</button>
+            <button className='link-btn'><img src={meta} width='25' alt="" />Meta</button>
         </div>
     </form>
    </div>
